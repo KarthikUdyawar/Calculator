@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Calculator</title>
+        <link rel="icon" href="icon.png" type="image">
+    </head>
+    <body theme="light">
+        <div class="main">
+            <div class="calculator">
+                <form action="" name="Calculator">
+                    <div class="header">
+                        <div class="switchBox">
+                            <input type="checkbox" name="" id="switch" class="switch" value="switch">
+                            <div class="box"></div>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="display" id="display" disabled> 
+                        <input type="button" name="cancel_btn" value="C" class="cancel_btn" onclick="cancel()">
+                    </div>
+                    <div class="row">
+                        <input type="button" name="btn7" value="7" onclick="display_num(btn7.value)">
+                        <input type="button" name="btn8" value="8" onclick="display_num(btn8.value)">
+                        <input type="button" name="btn9" value="9" onclick="display_num(btn9.value)">
+                        <input type="button" name="add_btn" value="+" onclick="display_num(add_btn.value)" style="background: #004781; color: white;">
+                    </div>
+                    <div class="row">
+                        <input type="button" name="btn4" value="4" onclick="display_num(btn4.value)">
+                        <input type="button" name="btn5" value="5" onclick="display_num(btn5.value)">
+                        <input type="button" name="btn6" value="6" onclick="display_num(btn6.value)">
+                        <input type="button" name="sub_btn" value="-" onclick="display_num(sub_btn.value)" style="background: #004781; color: white;">
+                    </div>
+                    <div class="row">
+                        <input type="button" name="btn1" value="1" onclick="display_num(btn1.value)">
+                        <input type="button" name="btn2" value="2" onclick="display_num(btn2.value)">
+                        <input type="button" name="btn3" value="3" onclick="display_num(btn3.value)">
+                        <input type="button" name="mul_btn" value="*" onclick="display_num(mul_btn.value)" style="background: #004781; color: white;">
+                    </div>
+                    <div class="row">
+                        <input type="button" name="dot_btn" value="." onclick="display_num(dot_btn.value)" style="border-radius: 0 0 0 10px;" >
+                        <input type="button" name="btn0" value="0" onclick="display_num(btn0.value)">
+                        <input type="button" name="ans_btn" value="=" onclick="calculate()" style="background: #100158; color: white;">
+                        <input type="button" name="div_btn" value="/" onclick="display_num(div_btn.value)" style="border-radius: 0 0 10px 0; background: #004781; color: white;">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>
